@@ -1,0 +1,146 @@
+/**
+ * Font Sizing Emmet 1rem = 10px
+ */
+html {font-size: 62.5%;} / sets global font size to 10px on desktop browsers /
+h1 {font-size:3.2rem}
+h2 {font-size:2.4rem}
+h3 {font-size:1.87167rem}
+h4 {font-size:1.6rem}
+h5 {font-size:1.32833rem}
+h6 {font-size:1.07167rem}
+input, select, th, td {font-size:1rem}
+
+/**
+ * Start of Custom Styles
+ */
+/*font-family: 'Lato', sans-serif;*/
+ html, body, ul {
+ 	height: 90%;
+ 	margin: 0 auto;
+ }
+
+ body {
+ 	background-color: #eee;
+ }
+
+div {
+	display: block;
+}
+
+li, ul {
+    list-style-image: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+#logo {
+	background-color: #fff; 
+	border-bottom: 1px solid #b4b4b3;
+	height: 6.5rem;
+}
+
+#logo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+}
+
+#logo h1 {
+	font-family: 'Rufina',serif;
+	font-size: 1.9rem;
+	text-align: center;
+
+	margin-top: 0rem;
+}
+
+#center-section {
+	height: 25rem;
+	background-color: #eee;	
+
+	display: block;
+}
+
+#answer-container  {
+	text-align: justify;
+	margin: 0 auto;
+	width: 35%;
+	padding-top: 6rem;
+}
+
+#progress-section {
+	margin: -16.5% 0% 0% 22%;
+	width: 3.5%;
+	display: inline-block;
+}
+
+#progress-section > div {
+	border: .2rem solid #d7634b;
+	border-radius: 6rem 6rem 6rem 6rem;
+}
+
+.answer {
+	font-family: 'Rufina',serif;
+	font-weight: 600;
+    font-size: 2rem;
+}
+
+#answerPop {
+	visibility: hidden;
+}
+
+
+#questions-section > h1  {
+	visibility: hidden;
+	color: #dfddde;
+}
+#introduction-banner{
+	text-align: center;
+	padding-top: 2rem;
+}
+#introduction-banner > h1 {
+	color: #dfddde;
+
+}
+
+/*.ansOptions {
+	display: none;
+}*/
+
+#results-section {
+	text-align: center;
+	color: #dfddde;
+}
+
+#closingPage > h1 {
+	padding-top: 3rem;
+}
+
+#results-section, #questions-section {
+	height: 9rem;
+	background-color: #282726;
+}
+
+#footer-section {
+	height: 10rem;
+	background-color: #0e0d0d;
+}
+
+#img-height {
+	height: 9rem;
+}
+
+.wilderness {
+	padding: 0 20rem;
+}
+
+.activity-logos {
+	font-size: 0;
+	text-align: center;
+}
+
+.activity-logos > li {
+	display: inline-block;
+	
+}

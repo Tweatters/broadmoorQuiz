@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Broadmoor Quiz</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.broadmoor.com/Broadmoor.com-0073-2016Redesign/media/Broadmoor/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body id="body">
+	<div id="logo">
+		<img src="./images/main-logo.png">
+		<h1>Quiz</h1>
+	</div>
+
+	<div id="questions-section">
+		<div id="introduction-banner">
+			<h1>How much do you know about 'The Most Unique Resort in the World?'</h1>
+		</div>
+		<h1 id="firstQuestion hide">
+			Overlooking The Broadmoor, Colorado Springs and Garden of the Gods is the ________ Shrine of the Sun  //answer is Will Rogers
+		</h1>
+		<h1 id="secondQuestion hide">
+			The Broadmoor Seven Falls is the most majestic waterfall in Colorado, but how many steps do you take while traveling up this beauty? //answer is 224
+		</h1> 
+		<h1 id="thirdQuestion hide">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue.
+		</h1>
+		<h1 id="fourthQuestion hide">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum nulla ac erat blandit faucibus.
+		</h1>
+		<h1 id="fifthQuestion hide">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum egestas turpis, eget rhoncus lacus dictum at. Morbi dapibus dapibus.
+		</h1>
+	</div>
+
+	<div id="center-section">
+		<div id="answer-container">
+			<div id="firstQuestion" class="ansOptions">
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">lorem1</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">ipsum1</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">dolor1</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">sit amet1</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">1consectetur</span>
+				<br>
+			</div>
+			<!--
+			<div id="secondQuestion" class="ansOptions">
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">2lorem</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">2ipsum</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">2dolor</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">2sit amet</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">2consectetur</span>
+				<br>
+			</div>
+			<div id="thirdQuestion" class="ansOptions">
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">3lorem</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">3ipsum</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">3dolor</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">3sit amet</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">3consectetur</span>
+				<br>
+			</div>
+			<div id="fourthQuestion" class="ansOptions">
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">4lorem</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">4ipsum</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">4dolor</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">4sit amet</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">4consectetur</span>
+				<br>
+			</div>
+			<div id="fifthQuestion" class="ansOptions">
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">5lorem</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">5ipsum</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">5dolor</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">5sit amet</span>
+				<br>
+				<input type="radio" name="option" class="option" value="0">
+					<span class="answer">5consectetur</span>
+				<br>
+			</div> 
+			-->
+		</div>
+			
+		
+	</div>
+	<div id="progress-section">
+				<div id="firstComplete bRadius">
+					<img id="inProgress" src="./images/loader-ripple.svg">
+				</div>
+				<div id="secondComplete bRadius">
+					<img id="inProgress" src="./images/loader-ripple.svg">
+				</div>
+				<div id="thirdComplete bRadius">
+					<img id="inProgress" src="./images/loader-ripple.svg">
+				</div>
+				<div id="fourthComplete bRadius">
+					<img id="inProgress" src="./images/loader-ripple.svg">
+				</div>
+				<div id="fifthComplete bRadius">
+					<img id="inProgress" src="./images/loader-ripple.svg">
+				</div>
+			</div>	
+
+	<div id="results-section">
+		<!--
+		<div id="answerPop" id="correct">
+			<h1>Correct!</h1>
+			<h2>Good job getting it right!</h2>
+			
+		</div>
+		<div id="answerPop" id="incorrect">
+			<h1>Sorry</h1>
+			<h2>That was not the right answer...</h2>
+		</div>
+		-->
+		<div id="closingPage">
+			<h1>You have completed the quiz!</h1>
+			
+		</div>
+	</div>
+
+	<div id="footer-section">
+		<ul class="activity-logos">
+			<li class="soaring">
+				<img id="img-height" src="./images/soaring-adventure-logo.png">
+			</li>			
+			<li class="wilderness">
+				<img id="img-height" src="./images/wilderness-logo.png">
+			</li>
+
+			<li class="seven-falls">
+				<img id="img-height" src="./images/experience-logo-sevenfalls-2.png">
+			</li>
+		</ul>
+	</div>
+	
+</body>
+<script src="app.js"></script>
+</html>
