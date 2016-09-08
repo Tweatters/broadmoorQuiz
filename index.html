@@ -16,152 +16,103 @@
 	</div>
 
 	<div id="questions-section">
-		<div id="introduction-banner">
-			<h1>How much do you know about 'The Most Unique Resort in the World?'</h1>
-		</div>
-		<h1 id="firstQuestion hide">
-			Overlooking The Broadmoor, Colorado Springs and Garden of the Gods is the ________ Shrine of the Sun  //answer is Will Rogers
-		</h1>
-		<h1 id="secondQuestion hide">
-			The Broadmoor Seven Falls is the most majestic waterfall in Colorado, but how many steps do you take while traveling up this beauty? //answer is 224
-		</h1> 
-		<h1 id="thirdQuestion hide">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue.
-		</h1>
-		<h1 id="fourthQuestion hide">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum nulla ac erat blandit faucibus.
-		</h1>
-		<h1 id="fifthQuestion hide">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum egestas turpis, eget rhoncus lacus dictum at. Morbi dapibus dapibus.
-		</h1>
+		<h1 id="intro-banner"></h1>
+		<h1 id="final-score"></h1>
+		<h1 id="question-title" class="hide"></h1>
+	
 	</div>
 
 	<div id="center-section">
-		<div id="answer-container">
-			<div id="firstQuestion" class="ansOptions">
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">lorem1</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">ipsum1</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">dolor1</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">sit amet1</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">1consectetur</span>
-				<br>
-			</div>
-			<!--
-			<div id="secondQuestion" class="ansOptions">
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">2lorem</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">2ipsum</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">2dolor</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">2sit amet</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">2consectetur</span>
-				<br>
-			</div>
-			<div id="thirdQuestion" class="ansOptions">
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">3lorem</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">3ipsum</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">3dolor</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">3sit amet</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">3consectetur</span>
-				<br>
-			</div>
-			<div id="fourthQuestion" class="ansOptions">
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">4lorem</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">4ipsum</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">4dolor</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">4sit amet</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">4consectetur</span>
-				<br>
-			</div>
-			<div id="fifthQuestion" class="ansOptions">
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">5lorem</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">5ipsum</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">5dolor</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">5sit amet</span>
-				<br>
-				<input type="radio" name="option" class="option" value="0">
-					<span class="answer">5consectetur</span>
-				<br>
-			</div> 
-			-->
-		</div>
-			
-		
-	</div>
-	<div id="progress-section">
-				<div id="firstComplete bRadius">
-					<img id="inProgress" src="./images/loader-ripple.svg">
-				</div>
-				<div id="secondComplete bRadius">
-					<img id="inProgress" src="./images/loader-ripple.svg">
-				</div>
-				<div id="thirdComplete bRadius">
-					<img id="inProgress" src="./images/loader-ripple.svg">
-				</div>
-				<div id="fourthComplete bRadius">
-					<img id="inProgress" src="./images/loader-ripple.svg">
-				</div>
-				<div id="fifthComplete bRadius">
-					<img id="inProgress" src="./images/loader-ripple.svg">
+		<div id="progress-section">
+				<div id="progressContainer" class="hide">
+					<span></span>
 				</div>
 			</div>	
+		<div id="answer-container" class="hide">
+			
+				<input 
+					type="radio" 
+					value="0" 
+					name="option" 
+					id="option1" 
+					class="option"
+				>
+					<label for="option1"></label>
+				<br>
+
+				<input 
+					type="radio" 
+					value="1" 
+					id="option2" 
+					name="option" 
+					class="option"
+				>
+					<label for="option2"></label>
+				<br>
+
+				<input 
+					type="radio" 
+					value="2" 
+					id="option3" 
+					class="option" 
+					name="option"
+				>
+					<label for="option3"></label>
+				<br>
+
+				<input 
+					type="radio" 
+					value="3" 
+					id="option4" 
+					class="option" 
+					name="option"
+				>
+					<label for="option4"></label>
+				<br>
+		</div>
+
+		<div id="buttonContainer">
+			<button 
+				id="submit" 
+				class="button"
+				>Submit
+			</button>
+			<button 
+				id="next" 
+				class="button"
+				>Next
+			</button> 
+			<button 
+				id="start" 
+				class="button"
+				>Start Quiz
+			</button> 
+			<button 
+				id="re-start" 
+				class="button"
+				>Re-Start Quiz
+			</button> 
+		</div>
+	</div>
+
 
 	<div id="results-section">
-		<!--
-		<div id="answerPop" id="correct">
-			<h1>Correct!</h1>
-			<h2>Good job getting it right!</h2>
+		<div id="resultsContainer" class="hide">
 			
-		</div>
-		<div id="answerPop" id="incorrect">
-			<h1>Sorry</h1>
-			<h2>That was not the right answer...</h2>
-		</div>
-		-->
-		<div id="closingPage">
-			<h1>You have completed the quiz!</h1>
+			<div class="answerPop" id="correct">
+				<h1>Correct!</h1>
+				<h2>Good job getting it right!</h2>
+				
+			</div>
+			<div class="answerPop" id="incorrect">
+				<h1>Sorry</h1>
+				<h2>That was not the right answer...</h2>
+			</div>
 			
+			<div id="closingPage">
+				<h1>You have completed the quiz!</h1>
+				
+			</div>
 		</div>
 	</div>
 
