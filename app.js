@@ -14,8 +14,6 @@ create_question('quetsion qutro ; lorem ipsum dolor sit amet consequter', ['lore
 create_question('quetsion cinco ; lorem ipsum dolor sit amet consequter', ['lorem5', 'ipsum5', 'dolor5', 'sit amet5'], 2)
 ]
 
-var quiz_state =
-	{}
 
 $(function(){
 	var $questionTitle = $('#question-title');
@@ -50,7 +48,7 @@ function clearPage() {
 };  
 
 function display_current_question () {
-	$question_number.text(current_question.questionNumber);
+	$question_number.text(current_question.$questionNumber);
 	$questionTitle.text(current_question.title);
 	$answer_labels.each(function(index){
 		this.innerText = current_question.answers[index]
@@ -60,7 +58,11 @@ function display_current_question () {
 
 var start_quiz = function() {
 	clearPage();
-	question_count = 0;
+	
+
+	$('#final-score').hide();
+	$('#closingPage').hide();
+
 	$questionTitle.show();
 	$('#answer-container').show();
 	$('#submit').show();
@@ -123,15 +125,17 @@ var next_question = $next.on('click', function(){
 
 	} else {
 		clearPage();
+		question_count = 0;
 		finish_quiz();
-
+		number_correct = 0;
+		current_question = questions[question_count];
 	}
 
 })
 
 
 
-$reStart.on('click', start_quiz);
+$reStart.on('click', start_quiz); //the re-start puts the user into the 5th question based on question count
 
 
 
